@@ -1,1 +1,16 @@
+server:
+  port: 7070
+spring:
+  mvc.log-request-details: true
+  main.allow-bean-definition-overriding: true
+  security.oauth2.client:
+    registration:
+      google:       # autoconfigure provider.
+        client-id: 15541412979-6urtln3bffg8g7vpijn2b20brl9guh9a.apps.googleusercontent.com
+        client-secret: hiX1tW3kQwp1sIcPZoArpx7d
+        redirect-uri: "{baseUrl}/oauth2/callback/{registrationId}"
+
+logging:
+  level:
+    org.springframework: debug
 
